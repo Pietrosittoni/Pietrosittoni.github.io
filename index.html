@@ -354,7 +354,7 @@ const SITE = {
   publicationsIntro: "papers and preprints, newest first",
   talksIntro: "talks I have given and sessions I have organized",
   maxAuthors: 3,                         // show this many authors, then "and N more authors" (0 = show all)
-  lastUpdated: "September 2026"
+  lastUpdated: "November 2026"
 };
 
 /* Publications
@@ -372,14 +372,14 @@ const PUBLICATIONS = [
     image: IMAGES.unetThumb, imageFull: IMAGES.unetFull,
     title: "Simplifying Transformer-Based U-Net Neural Physics Simulators",
     authors: ["Pietro Sittoni", "Francesco Tudisco"],
-    links: { pdf: "soon" }
+    links: { pdf: "https://openreview.net/pdf?id=AISWDtZ6VB", code: "https://github.com/Pietrosittoni/UFlex" }
   },
   {
     year: 2026, badge: "ICML", venue: "ICML 2026", selected: true,
     image: IMAGES.hssThumb, imageFull: IMAGES.hssFull,
     title: "Neural-HSS: Hierarchical Semi-Separable Neural PDE Solver",
     authors: ["Pietro Sittoni*", "Emanuele Zangrando*", "Angelo A. Casulli", "Nicola Guglielmi", "Francesco Tudisco"],
-    links: { arxiv: "https://arxiv.org/abs/2602.18248", pdf: "https://arxiv.org/pdf/2602.18248" },
+    links: { arxiv: "https://arxiv.org/abs/2602.18248", pdf: "https://arxiv.org/pdf/2602.18248", code: "https://github.com/Pietrosittoni/Neural-HSS" },
     abstract: "Deep learning-based methods have shown remarkable effectiveness in solving PDEs, largely due to their ability to enable fast simulations once trained. However, many critical applications remain constrained by the substantial computational costs of generating large-scale, high-quality datasets and training models. Inspired by studies on the structure of Green's functions for elliptic PDEs, we introduce Neural-HSS, a parameter-efficient architecture built upon the Hierarchical Semi-Separable (HSS) matrix structure that is provably data-efficient for a broad class of PDEs. We prove that it satisfies exactness properties even in very low-data regimes, and investigate its connections with other architectural primitives such as the Fourier neural operator layer and convolutional layers. We validate its data efficiency on the three-dimensional Poisson equation over a grid of two million points, and demonstrate that it learns from data arising from a broad class of PDEs in electromagnetism, fluid dynamics and biology."
   },
   {
@@ -402,15 +402,15 @@ const PUBLICATIONS = [
     year: 2024, badge: "ICML", venue: "ICML 2024", selected: true, image: IMAGES.subdeq,
     title: "Subhomogeneous Deep Equilibrium Models",
     authors: ["Pietro Sittoni", "Francesco Tudisco"],
-    links: { arxiv: "https://arxiv.org/abs/2403.00720", pdf: "https://arxiv.org/pdf/2403.00720" },
+    links: { arxiv: "https://arxiv.org/abs/2403.00720", pdf: "https://arxiv.org/pdf/2403.00720", code: "https://github.com/COMPiLELab/SubDEQ" },
     abstract: "Implicit-depth neural networks have grown as powerful alternatives to traditional networks in various applications in recent years. However, these models often lack guarantees of existence and uniqueness, raising stability, performance, and reproducibility issues. We present a new analysis of the existence and uniqueness of fixed points for implicit-depth neural networks based on the concept of subhomogeneous operators and the nonlinear Perron-Frobenius theory. Compared to previous similar analyses, our theory allows for weaker assumptions on the parameter matrices, yielding a more flexible framework for well-defined implicit networks. We illustrate the performance of the resulting subhomogeneous networks on feedforward, convolutional, and graph neural network examples."
   },
   {
     year: 2024, badge: "NeurIPS WS", venue: "NeurIPS 2024 Workshop: Foundation Models for Science: Progress, Opportunities and Challenges",
     image: IMAGES.solThumb, imageFull: IMAGES.solFull,
-    title: "Solaris: A Foundation Model for the Sun",
+    title: "Solaris: A Foundation Model of the Sun",
     authors: ["Harris Abdul Majid*", "Pietro Sittoni*", "Francesco Tudisco"],
-    links: { arxiv: "https://arxiv.org/abs/2411.16339", pdf: "https://arxiv.org/pdf/2411.16339" },
+    links: { arxiv: "https://arxiv.org/abs/2411.16339", pdf: "https://arxiv.org/pdf/2411.16339", code: "https://github.com/Hrrsmjd/solaris" },
     abstract: "We present Solaris, the first foundation model for forecasting the Sun's atmosphere. We leverage 13 years of full-disk, multi-wavelength solar imagery from the Solar Dynamics Observatory, spanning a complete solar cycle, to pre-train Solaris for 12-hour interval forecasting. Solaris is built on a large-scale 3D Swin Transformer architecture with 109 million parameters, and increasing the number of parameters improves performance, in line with scaling laws in other domains. Fine-tuned in a low-data regime on a single wavelength (1700 Å) not seen during pre-training, Solaris outperforms models trained from scratch on that wavelength."
   }
 ];
